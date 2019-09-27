@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const bodyParser = require("body-parser");
 const github = require("./api/github");
 
@@ -6,6 +7,7 @@ const app = express();
 
 const apiPrefix = "/api/scm"
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
