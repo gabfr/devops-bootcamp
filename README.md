@@ -1,3 +1,6 @@
+# DevOps Bootcamp
+
+Down below we have a few notes I will make throughout the devops bootcamp course. Please, don't mind any noisy information. This repo. still a draft.
 
 ## Docker versioning
 
