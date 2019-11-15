@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: devopsbootcamp-questcode-user
+spec:
+  selector:
+    app: devopsbootcamp-questcode-user
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3020
+      # nodePort: 30080
