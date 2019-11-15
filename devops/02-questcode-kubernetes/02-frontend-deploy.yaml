@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsbootcamp-questcode-frontend
+  labels:
+    app: devopsbootcamp-questcode-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devopsbootcamp-questcode-frontend
+  template:
+    metadata:
+      labels:
+        app: devopsbootcamp-questcode-frontend
+    spec:
+      containers:
+        - name: devopsbootcamp-questcode-frontend
+          image: gfrosalino/devopsbootcamp-questcode-frontend:0.1.8
+          ports:
+            - containerPort: 80
